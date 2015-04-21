@@ -1,0 +1,7 @@
+Compilation
+===========
+gcc -Wall TCPServerUtility.c UDPServerUtility.c server.c -o server
+
+Usage
+=====
+./server <UDP Port> <TCP Port>

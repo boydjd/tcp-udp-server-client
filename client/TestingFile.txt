@@ -1,0 +1,12 @@
+1.	S must run its program first. 
+2.	C contacts S through UDP socket and says ¡°HELLO¡±.
+3.	S receives ¡°HELLO¡± and replies with ¡°OK¡±. 
+4.	As long as C receives ¡°OK¡±, and says ¡°UPLOAD¡±.
+5.	As long as S receives ¡°UPLOAD¡±, it replies with ¡°FileName¡±.
+6.	C gets the file name from the user, and sends the filename to S.
+7.	S replies with ¡°READY¡±.
+8.	C sets up a new TCP connection to S side and transfer the file.
+9.	The file must be a text and readable file (see my sample file).
+10.	C sends the file line by line, and S receives the file line by line and save the file to the sever side in the current folder with the same file name as the client¡¯s. 
+11.	C must clearly tell S ¡°END of FILE¡±, and S must reply with ¡°GOT IT¡±.
+12.	As long as C receives ¡°GOT IT¡±, it displays ¡°Transfer successfully¡± and closes the TCP connection with the server side. 
